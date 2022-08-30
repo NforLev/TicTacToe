@@ -1,0 +1,80 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(38, 41, 43);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scoresAndPlayers{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.playerX, .playerO{
+    font-size: 40px;
+    background-color: rgb(76, 81, 85);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    
+}   
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gameGrid{
+    display: grid;
+    padding-top: 4rem;
+    grid-template-columns: repeat(3, 100px);    
+    gap: 6px;
+}
+
+.gridCell{
+    background-color: rgb(76, 81, 85);
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    border: none;
+}
+
+.gameLeyendContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.gameLeyend, .restartBtn{
+    margin: 2rem;
+    font-size: 40px;
+    background-color: rgb(76, 81, 85);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.restartBtn:hover{
+    font-size: 42px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.restartBtn{
+    display: none;
+    transition: 0.5s;
+}
